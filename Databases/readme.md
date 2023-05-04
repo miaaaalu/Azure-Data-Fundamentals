@@ -19,14 +19,16 @@ There are four common types of Non-relational database commonly in use.
 **Key-value databases**
 * each record consists of a `unique key` and an associated value, which can be in any format.
 
-    ![Link Name](https://learn.microsoft.com/en-us/training/wwl-data-ai/explore-core-data-concepts/media/key-value-store.png)  
+![Link Name](https://learn.microsoft.com/en-us/training/wwl-data-ai/explore-core-data-concepts/media/key-value-store.png)  
 
 **Document databases**
 * a specific form of key-value database
 * value is a JSON document (which the system is optimized to parse and query)
+
 ![](https://learn.microsoft.com/en-us/training/wwl-data-ai/explore-core-data-concepts/media/document-store.png)  
 
 **Graph databases**
 * store entities as nodes with links to define relationships between them.
+
 ![](https://learn.microsoft.com/en-us/training/wwl-data-ai/explore-core-data-concepts/media/graph.png)  
 
