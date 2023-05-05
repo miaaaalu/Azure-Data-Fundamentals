@@ -1,5 +1,14 @@
-# Explore databases
-## Relational databases 
+# Learning Notes
+
+## Table of Contents
+- [Relational databases](#relational-databases)
+- [Non-relational databases](#non-relational-databases)
+- [Key-value databases](#key-value-databases)
+- [Document databases](#document-databases)
+- [Graph databases](#graph-databases)
+
+
+### Relational databases 
 Relational databases are commonly used to store and query `structured data`. 
 
 * The data is stored in tables that represent `entities`, such as customers, products, or sales orders. 
@@ -11,7 +20,7 @@ This use of keys to reference data entities enables a relational database to be 
 
 ![Link Name](https://learn.microsoft.com/en-us/training/wwl-data-ai/explore-core-data-concepts/media/relational-database.png)  
 
-## Non-relational databases
+### Non-relational databases
 Non-relational databases are data management systems that `don’t apply a relational schema` to the data. Non-relational databases are often referred to as `NoSQL database`.
 
 There are four common types of Non-relational database commonly in use.
