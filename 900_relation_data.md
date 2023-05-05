@@ -1,10 +1,10 @@
 # Learning Notes
-
-Table of Contents
-1. [normalization](#normalization)
-2. [SQL Statement](#sql-statement)
-3. [Term](#term)
-
+- [Normalization](#normalization)
+- [SQL Statement](#sql-statement)
+  - [DDL statements](#ddl-statements)
+  - [DCL statements](#dcl-statements)
+  - [DML statements](#dml-statements)
+- [Term](#term)
 
 ## normalization
 Use in: 
@@ -29,8 +29,13 @@ non-nomarlised            |  nomarlised
 
 ## SQL Statement
 ### DDL statements 
-use DDL (Data Definition Language) statements to create, modify, and remove tables and other objects in a database (table, stored procedures, views, and so on).
+use to create, modify, and remove `tables and other objects` in a database, including
+- table
+- stored procedures 
+- views 
+- ...
 
+Common DDL statements:
 | Statement | Description                                                                                             |
 |-----------|---------------------------------------------------------------------------------------------------------|
 | CREATE    | Create a new object, such as a table/view.                                          |
@@ -39,13 +44,35 @@ use DDL (Data Definition Language) statements to create, modify, and remove tabl
 | RENAME    | Rename an existing object.                                                                               |
 > **Note:** The DROP statement is very powerful. When you drop a table, all the rows in that table are lost.
 
-<div class="my-box">
-Your message here.
-</div>
+### DCL statements 
+to `manage access` to objects in a database by granting, denying, or revoking permissions to specific users or groups. For example:
+| Statement | Description                                           |
+|-----------|-------------------------------------------------------|
+| GRANT     | Grant permission to perform specific actions.         |
+| DENY      | Deny permission to perform specific actions.          |
+| REVOKE    | Remove a previously granted permission.               |
+
+### DML statements 
+-  use DML statements to `manipulate the rows`in tables.
+- to retrieve (query) data, insert new rows, or modify existing rows. You can also delete rows if you don't need them anymore. For example: 
+    - SELECT
+    - UPDATE 
+    - INSERT 
+    - DELETE 
 
 ## Term
 - Entity: table
 - attribute: column
 - instance of entity: row
+- DDL: Data Definition Language
+- DCL: Data Control Language
+- DML Data Manipulation Language
 
-## 
+| Term                   | Definition                                      |
+|------------------------|------------------------------------------------|
+| Entity                 | Table                                          |
+| Attribute              | Column                                         |
+| Instance               | Row                                            |
+| DDL| Data Definition Language |
+| DCL| Data Control Language|
+| DML| Data Manipulation Language |
