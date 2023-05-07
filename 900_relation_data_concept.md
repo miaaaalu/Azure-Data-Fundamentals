@@ -1,5 +1,10 @@
 # Learning Notes
+
 - [Normalization](#normalization)
+- [Database Objects](#database-objects)
+  - [View](#view)
+  - [Stored Procedure](#stored-procedure)
+  - [Index](#index)
 - [SQL Statement](#sql-statement)
   - [DDL statements](#ddl-statements)
   - [DCL statements](#dcl-statements)
@@ -26,6 +31,51 @@ Example
 non-nomarlised            |  nomarlised
 :-------------------------:|:-------------------------:
 ![](https://learn.microsoft.com/en-us/training/wwl-data-ai/explore-relational-data-offerings/media/unnormalized-data.png)  |  ![](https://learn.microsoft.com/en-us/training/wwl-data-ai/explore-relational-data-offerings/media/normalized-data.png)
+
+## Database Objects 
+### View 
+A view is a virtual table based on the results of a SELECT query. 
+
+```SQL
+CREATE VIEW Deliveries
+AS
+SELECT o.OrderNo, o.OrderDate,
+       c.FirstName, c.LastName, c.Address, c.City
+FROM Order AS o JOIN Customer AS c
+ON o.Customer = c.ID;
+```
+### Stored procedure
+ the following stored procedure could be defined to change the name of a product based on the specified product ID.
+
+```sql
+-------------------------------------------
+---Create stored procedure RenameProduct---
+-------------------------------------------
+CREATE PROCEDURE RenameProduct
+	@ProductID INT,
+	@NewName VARCHAR(20)
+AS
+UPDATE Product
+SET Name = @NewName
+WHERE ID = @ProductID;
+
+-------------------------------------------
+---------Execute stored procedure----------
+-------------------------------------------
+EXEC RenameProduct 201, 'Spanner';
+```
+
+
+### Index
+- When you create an index in a database, you specify a `column` from the table.
+- For a table containing few rows, using the index is probably not any more efficient - the query optimizer will ignore the index). 
+- However, when a table has many rows, indexes can dramatically improve the performance of queries.
+- indexes aren't free. An index `consumes storage space`, and each time you insert, update, or delete data in a table, the indexes for that table must be maintained. This additional work can slow down insert, update, and delete operation
+
+```sql
+CREATE INDEX idx_ProductName
+ON Product(Name);
+```
 
 ## SQL Statement
 ### DDL statements 
