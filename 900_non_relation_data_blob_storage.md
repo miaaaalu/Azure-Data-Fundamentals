@@ -1,5 +1,17 @@
 # Learning Notes
 
+# Learning Notes
+
+1. [Blob Storage (Binary large object)](#blob-storage-binary-large-object)
+    - [Azure Blob Type](#azure-blob-type)
+        - [Block blobs](#block-blobs)
+        - [Page blobs](#page-blobs)
+        - [Append blobs](#append-blobs)
+    - [Blob Storage Access Tiers](#blob-storage-access-tiers)
+
+2. [Reference](#reference)
+
+
 ## Blob Storage (Binary large object)
 
 | Aspect    | Details                                                                            |
