@@ -17,7 +17,7 @@
 ## Azure Blob Type
 ![IMAGE](https://miro.medium.com/v2/resize:fit:720/format:webp/0*PYSS__o2sYQBYgKd.png)
 
-**Block blobs**
+### **Block blobs**
 |              | Block Blob                                |
 | ------------ | --------------------------------------- | 
 | Handling     | Collection of blocks that form a file    |
@@ -29,7 +29,7 @@
 |              | that change infrequently                  |
 
 
-**Page blobs**
+### **Page blobs**
 
 | Aspect | Details |
 | ------ | ------- |
@@ -40,7 +40,7 @@
 | Usage | Implement virtual disk storage for virtual machines |
 
 
-**Append blobs**
+### **Append blobs**
 
 | Aspect | Details |
 | ------ | ------- |
@@ -71,7 +71,7 @@ You can create lifecycle management policies for blobs in a storage account. A l
 
 
 
-Referenec
+## Reference
 
 1. [What Is a BLOB?](https://medium.com/geekculture/what-is-a-blob-83e65f590694)
 
