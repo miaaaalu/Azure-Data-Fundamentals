@@ -15,30 +15,29 @@
 ### 1. Data Ingestion and Processing
 
 ![data ingestion pipelines](https://learn.microsoft.com/en-us/training/wwl-data-ai/examine-components-of-modern-data-warehouse/media/pipeline.png)
-***
-- Data is sourced from transactional data stores, files, real-time streams, etc.
-- Extract, transform, and load (ETL/ELT) processes are used to clean, filter, and restructure the data.
-- Ingestion includes batch processing of static data and real-time processing of streaming data.
-- Distributed systems handle high volumes of data in parallel.
-***
+>
+> - Data is sourced from transactional data stores, files, real-time streams, etc.
+> - Extract, transform, and load (ETL/ELT) processes are used to clean, filter, and restructure the data.
+> - Ingestion includes batch processing of static data and real-time processing of streaming data.
+> - Distributed systems handle high volumes of data in parallel.
 
 Azure Large-Scale Data Ingestion Instructions
 
-    1.1. Choose the Pipeline Engine: Select either `Azure Data Factory` or `Azure Synapse Analytics` to create and run the pipelines.
+1.1. Choose the Pipeline Engine: Select either `Azure Data Factory` or `Azure Synapse Analytics` to create and run the pipelines.
 
-    2.1. Define Activities: Construct pipelines with one or more activities that operate on data, starting with an input dataset and progressing through incremental manipulations.
+2.1. Define Activities: Construct pipelines with one or more activities that operate on data, starting with an input dataset and progressing through incremental manipulations.
 
-    3.1. Utilize Linked Services: Use linked services in pipelines to load and process data, allowing for the use of appropriate technologies at each workflow step.
+3.1. Utilize Linked Services: Use linked services in pipelines to load and process data, allowing for the use of appropriate technologies at each workflow step.
 
-    4.1. Configure Data Sources: Ingest the input dataset using linked services like `Azure Blob Store`.
+4.1. Configure Data Sources: Ingest the input dataset using linked services like `Azure Blob Store`.
 
-    5.1. Perform Data Processing: Apply transformations to the data using services such as `Azure SQL Database`, `Azure Databricks`, or `Azure HDInsight`.
+5.1. Perform Data Processing: Apply transformations to the data using services such as `Azure SQL Database`, `Azure Databricks`, or `Azure HDInsight`.
 
-    6.1. Implement Custom Logic: Optionally, incorporate custom logic using `Azure Functions`.
+6.1. Implement Custom Logic: Optionally, incorporate custom logic using `Azure Functions`.
 
-    7.1. Save Output Dataset: Store the resulting output dataset in a linked service like `Azure Synapse Analytics`.
+7.1. Save Output Dataset: Store the resulting output dataset in a linked service like `Azure Synapse Analytics`.
 
-    8.1. Leverage Built-in Activities: Take advantage of built-in activities within the pipelines, which do not require a linked service.
+8.1. Leverage Built-in Activities: Take advantage of built-in activities within the pipelines, which do not require a linked service.
 
 ### 2. Analytical Data Store
 - Relational data warehouses, file-system-based data lakes (sometimes called data lakehouses or lake databases), or hybrid architectures are used for large-scale analytics.
