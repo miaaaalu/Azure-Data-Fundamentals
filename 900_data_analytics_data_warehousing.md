@@ -43,7 +43,7 @@
 
 There are two common types of analytical data store.
 
-## (1). Data Warehouse**
+## (1). Data Warehouse
 
 A data warehouse is a relational database in which the data is stored in a schema that is optimized for data analytics rather than transactional workloads. 
 
