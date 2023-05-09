@@ -1,14 +1,13 @@
 # Learning Notes
 
 ## Table of Contents
-- [Relational databases](#relational-databases)
-- [Non-relational databases](#non-relational-databases)
-- [Key-value databases](#key-value-databases)
-- [Document databases](#document-databases)
-- [Graph databases](#graph-databases)
+- [Learning Notes](#learning-notes)
+  - [Table of Contents](#table-of-contents)
+    - [Relational databases](#relational-databases)
+    - [Non-relational databases](#non-relational-databases)
 
 
-### Relational databases 
+### Relational databases
 Relational databases are commonly used to store and query `structured data`. 
 
 * The data is stored in tables that represent `entities`, such as customers, products, or sales orders. 

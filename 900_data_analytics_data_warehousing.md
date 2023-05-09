@@ -1,11 +1,24 @@
+- [Intro](#intro)
+- [data warehousing architecture](#data-warehousing-architecture)
+  - [1. Data Ingestion and Processing](#1-data-ingestion-and-processing)
+  - [2. Analytical Data Store](#2-analytical-data-store)
+  - [(1). Data Warehouse](#1-data-warehouse)
+  - [**(2). Data Lake**](#2-data-lake)
+  - [**Hybrid approaches**](#hybrid-approaches)
+  - [Azure services for analytical stores](#azure-services-for-analytical-stores)
+    - [Synapse Analytics](#synapse-analytics)
+    - [Databricks](#databricks)
+  - [3. Analytical Data Model](#3-analytical-data-model)
+  - [4. Data Visualization](#4-data-visualization)
+
 # Intro
-| Key Aspect             | Conventional Data Warehousing                                          | Big Data Processing Solutions                                                                                                                                                   |
-| ---------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Data Handling Approach | Copying data from transactional data stores into a relational database | Handling large volumes of data in multiple formats, batch loaded or captured in real-time streams                                                                               |
-| Data Storage           | Relational database with optimized schema                              | Data lake                                                                                                                                                                       |
-| Data Types             | Structured data                                                        | Structured and unstructured data                                                                                                                                                |
-| Use Cases              | Business intelligence, reporting                                       | Complex analytics, machine learning on large datasets                                                                                                                           |
-| Querying               | SQL                                                                    | Distributed processing engines like Apache Spark                                                                                                                                |
+| Key Aspect             | Conventional Data Warehousing                                          | Big Data Processing Solutions                                                                     |
+| ---------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Data Handling Approach | Copying data from transactional data stores into a relational database | Handling large volumes of data in multiple formats, batch loaded or captured in real-time streams |
+| Data Storage           | Relational database with optimized schema                              | Data lake                                                                                         |
+| Data Types             | Structured data                                                        | Structured and unstructured data                                                                  |
+| Use Cases              | Business intelligence, reporting                                       | Complex analytics, machine learning on large datasets                                             |
+| Querying               | SQL                                                                    | Distributed processing engines like Apache Spark                                                  |
 
 # data warehousing architecture
 ## 1. Data Ingestion and Processing
@@ -15,6 +28,8 @@
 - Extract, transform, and load (ETL/ELT) processes are used to clean, filter, and restructure the data.
 - Ingestion includes batch processing of static data and real-time processing of streaming data.
 - Distributed systems handle high volumes of data in parallel.
+
+
 
 <details>
   <summary>Azure Large-Scale Data Ingestion Instructions
@@ -81,6 +96,7 @@ Usecase: supporting a mix of structured, semi-structured, and even unstructured 
 - PolyBase in Azure Synapse Analytics: SQL pools in Azure Synapse Analytics include PolyBase, which allows defining external tables based on files in a `data lake` (and other sources) and querying them using SQL.
 - Lake Database Approach: Azure Synapse Analytics also supports a Lake Database approach. It involves using database templates to define the relational schema of a data warehouse while storing the underlying data in data lake storage. This approach separates the storage and compute for the data warehousing solution.
 - Data Lakehouses: Data lakehouses are a relatively new approach in Spark-based systems. They leverage technologies like Delta Lake, which adds relational storage capabilities to Spark. With data lakehouses, you can define tables that enforce schemas and transactional consistency, support batch-loaded and streaming data sources, and provide a SQL API for querying.
+
 
 ## Azure services for analytical stores
 

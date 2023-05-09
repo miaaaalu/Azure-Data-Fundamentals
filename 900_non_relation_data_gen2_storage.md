@@ -2,6 +2,11 @@
 
 > ADLS Gen2 = Azure Blob Storage + ADLS Gen1
 
+- [Learning Note](#learning-note)
+  - [Blob Storage vs.  ADLS Gen2](#blob-storage-vs--adls-gen2)
+  - [Reference](#reference)
+
+
 ## Blob Storage vs.  ADLS Gen2
 | Use Cases | Blob storage | Gen2 |
 | --- | --- | --- |
